@@ -1,0 +1,148 @@
+/* CSS Document */
+
+
+h1 {
+	font: bold 1.4em Arial, sans-serif;
+	color: #43616B;
+	}
+
+h2 {
+	font: 1.2em /1 Arial, sans-serif;
+	color: #9C1A1E;
+	}
+
+h2.news {
+	color: #D6D6D6;
+	border: 0px solid pink;
+	}
+
+h4 {
+	font: bold small Verdana, sans-serif;
+	color: #9C1A1E;
+	margin-bottom: 2px;
+	}
+
+h5 {
+	font: italic bold small Arial, sans-serif;
+	color: #43616B;
+	margin-top: 2px;
+	}
+	
+p {
+	font: 0.7em Verdana, sans-serif;
+	}
+
+.standard {
+	font: 0.7em Verdana, sans-serif;
+	}
+
+
+.sponsor, .articlesponsor {
+	color: #A5B5C6;
+	}
+	
+.footer {
+	margin: 4px;
+	text-align: center;
+	}
+
+#bio {
+	float: right;
+	width: 150px;
+	padding: 10px;
+	border: 4px dotted #5C6F90;
+	color: #5C6F90;
+	}
+
+a {
+	color: #34339B;		
+	}
+a:hover {
+	color: #9C191E;	
+	}
+
+hr {
+	color: #A5B5C6;
+	height: 1px;
+	}
+	
+.textbox {	
+	font-family: verdana, sans-serif;
+	}
+
+.button {
+	font: bold verdana, sans-serif;
+	}
+	
+.latestarticle {
+	font: bold 0.8em Verdana, sans-serif;
+	}
+
+.date {
+	color: #A5B5C6;
+	font: 0.7em Verdana, sans-serif;
+	}
+
+.author {
+	color: #5C6F90;
+	font: 0.7em /2 Verdana, sans-serif;
+	}
+
+.crumbtrail{
+	font-size: x-small !important
+	}
+
+.leftcol {
+	color: #D6D6D6;
+	font: 0.7em Verdana, sans-serif;
+	}
+	
+.rightcol {
+	color: #D6D6D6;
+	font: bold 0.7em Verdana, sans-serif;
+	}
+	
+a:hover.rightcol  {
+	color: #A4B5C5;
+	}
+
+#mstrans {
+	width: 140px;
+	height: 30px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/footbag.png');
+	border: 0px solid pink;
+	}
+	
+.hidemstrans {
+	filter: Alpha(opacity=0);
+	}
+
+
+.mainnav {
+	font: bold 0.8em /1.5 arial, sans-serif;
+	color: #fff;
+	text-decoration: none;
+	}
+	
+a:hover.mainnav {
+	color: #eee;
+	}
+
+a.subnav  {
+	font: bold 0.7em /1.5 verdana, sans-serif;
+	text-decoration: none;
+	color: #5C6F90;
+	}
+
+a:hover.subnav {
+	color: #43616B;
+	text-decoration: underline;
+	}
+	
+a.topcontent  {
+	font: 0.7em /1 verdana, sans-serif;
+	}
+
+
+/* ---------------------------------------------------------------------*/
+  
