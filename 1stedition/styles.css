@@ -1,0 +1,401 @@
+/* CSS Document */
+
+/* ------------------------------- formatting ----------------------------- */
+
+body {
+	margin: 0;
+	padding: 0;
+	}
+
+h1 {
+	font: bold x-large Arial, sans-serif;
+	color: #43616B;
+	margin-top: 0px;
+	}
+
+#news h2 {
+	color: #D6D6D6;
+	margin-top: 10px;
+	}
+
+h2 {
+	font: large Arial, sans-serif;
+	color: #9C1A1E;
+	}
+
+h4 {
+	font: bold small Verdana, sans-serif;
+	color: #9C1A1E;
+	margin-bottom: 2px;
+	}
+
+h5 {
+	font: italic bold small Arial, sans-serif;
+	color: #43616B;
+	margin-top: 2px;
+	}
+	
+p {
+	font: 0.7em Verdana, sans-serif;
+	}
+
+#center p {
+	font: 0.8em Verdana, sans-serif;
+	}
+
+#sponsor p, #articlesponsor p {
+	color: #A5B5C6;
+	}
+	
+#footer p {
+	margin: 4px;
+	text-align: center;
+	}
+
+a {
+	color: #34339B;		
+	}
+a:hover {
+	color: #9C191E;	
+	}
+
+hr {
+	color: #A5B5C6;
+	height: 1px;
+	}
+	
+a img {
+	border: 0px none;
+	display: block;			/* removes extra space underneath caused by default text-alignment */
+	}
+
+div#top a {
+	display: block;			/* makes the background hover effect work in Mozilla */
+	width: 153px;
+	background-color: #5C6F90;
+	}
+
+div#top a:hover {
+	background-color: #43616B;
+	}
+
+.textbox {					/* Until IE understands <css> input[type="file"] { </css> It's better to define a new style then it is to re-define the input tag because radio buttons cop a beating */
+	padding: 4px;
+	font:  small verdana, sans-serif;
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #000;
+	}
+
+.button {
+	padding: 2px;
+	font: bold small verdana, sans-serif;
+	color: #fff;
+	background-color: #5C6F90;
+	border: 1px solid #000;
+	}
+
+.latestarticle {
+	margin-bottom: 0px;
+	}
+	
+.headshot {
+	display: inline;
+	float: left;
+	margin: 0px 0.5em 0.5em 0px;
+	}
+	
+p.latestarticle a {
+	clear: right;
+	font: bold small Verdana, sans-serif;
+	}
+
+.date {
+	display: block;
+	text-align: right;
+	color: #A5B5C6;
+	font: x-small Verdana, sans-serif;
+	}
+
+.author {
+	display: block;
+	color: #5C6F90;
+	font: x-small /2 Verdana, sans-serif;
+	}
+
+.blurb {
+	margin: 0px 0px 1em 55px;
+	}
+
+p.crumbtrail {
+	margin: 10px 28% 0px;;
+	font-size: x-small;
+	}
+/* 
+
+------------------------------- layout ----------------------------- 
+
+Notes:
+
+Do not mix px widths with % widths for margins, borders or padding because 
+the total box width = set width + padding + border.  (It helps if you can add them together)
+
+The box model hack is used to fix an bug in IE5-Win ...for an explanation from the guy that
+wrote it go to http://www.tantek.com/CSS/Examples/boxmodelhack.html
+
+IE6-Win will behave like IE5-Win  if you include <?xml version="1.0"?>  It is apparently
+unneccessary so leave it out!
+
+Left Col Widths:
+ |  pad   |         width        |  pad   | 				
+ ------------------------------------------					
+ |   0    |          25%         |   0    |	
+ 
+Center Margins:
+ |  marg  |         width        |  marg  | 
+ ------------------------------------------
+ |   25%  |        (auto)        |   25%  |
+
+Right Col Widths:
+ |  pad   |         width        |  pad   | 				
+ ------------------------------------------					
+ |  1.5%  |          22%         |  1.5%  |				total width= 25%
+ 
+
+*/
+
+#top {
+	padding: 4px;
+	background: #BDC5CE url(images/bgtop.jpg) repeat-x;
+	border-bottom: 1px solid #A5B5C6;
+	}
+	
+#center {
+	margin: 0px 25%; 
+	padding: 1% 3%;
+	background: #fff url(images/bgcenter.gif) no-repeat center;
+	color: #000;
+	}
+
+#left {
+	position: absolute;
+	padding: 0px;
+	top: 101px;
+	width: 25%;
+	background: #A5B5C6 url(images/bgbotleft.gif) left bottom repeat-x;
+	color: #000;
+	}
+
+#otherleftstuff {
+	width: 88%;
+	padding: 10px 6% 40px 6%;
+	}
+
+#news {
+	position: absolute;
+	width: 21.9%;			/* why not 22%?  because at some sizes the rounding difference adds up to more than 100% and gives us a horizontal scroll bar */
+	height: 250px;
+	overflow: hidden;
+	left: 75%;
+	padding: 0px 1.5%;
+	top: 101px;
+	background-color: #153976;
+	border-top: 1px solid #A5B5C6;
+	}
+
+div#news p.row {
+	width: 100%;
+	margin: 0px 0px 1em 0px;
+	}
+
+div#news p.row span.leftcol {
+	float: left;
+	color: #D6D6D6;
+	}
+	
+div#news p.row span.rightcol {
+	width: 70%;
+	float: right;
+	}
+	
+div#news p.row span.rightcol a {
+	color: #D6D6D6;
+	font-weight: bold;
+	}
+	
+div#news p.row span.rightcol a:hover {
+	color: #A4B5C5;
+	}
+	
+.spacer {
+	display: block;
+	height: 1px;
+	font: 1px /1 sans-serif;
+	clear: both;
+	}
+		
+div#topcontent {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	width: 80%;
+	}
+
+#topcontent h2, #topcontent p {
+	display: inline;
+	margin-right: 0.5em;
+	}
+
+#sponsor {
+	position: absolute;
+	width: 21.9%;
+	height: 251px;
+	left: 75%;
+	padding: 10px 1.5%;
+	top: 375px;
+	text-align: center;
+	}
+	
+#articlesponsor {
+	position: absolute;
+	width: 21.9%;
+	height: 251px;
+	margin-left: 75%;
+	padding: 10px 1.5%;
+	top: 150px;
+	text-align: center;
+	}
+
+#footer {
+	clear: both;
+	border-top: 1px solid #5C6F90;
+	border-bottom: 1px solid #5C6F90;
+	background-color: #D6D6D6;
+	color: #000;
+	}
+
+#bio {
+	float: right;
+	width: 30%;
+	padding: 1%;
+	border: 4px dotted #5C6F90;
+	color: 5C6F90;
+	font-size: 0.7em;
+	}
+/* --------------------- Feature Image and Transparency Trick --------------- */
+
+
+#featureimg {
+	margin: 0px 25% 0px 170px;
+	height: 250px;
+	background: #153976 url(images/sky.jpg) no-repeat right top;
+	text-align: center;
+	border-top: 1px solid #A5B5C6;		/*	Without this 1px border, Mozilla/Netscape applies the 200px margin from the child element (div#mstrans) - I don't know why? In these crazy topsy turvey times it seems that nothing is certain  */  
+	}
+	
+#mstrans {
+	margin: 200px auto 0px auto;
+	width: 140px;
+	height: 30px;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/footbag.png');
+	border: 0px solid pink;
+	}
+	
+#mstrans img {
+	filter: Alpha(opacity=0);	
+	border: 0px solid cyan;
+	}
+
+/* 
+
+-------------------------------- Navigation ------------------------------ 
+
+List tips courtesy of A List Apart: http://www.alistapart.com/stories/taminglists/
+
+*/
+
+
+ul#mainnav {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	background-color: #D6D6D6;
+	}
+		
+ul#mainnav li {
+	display: block;
+	border-top: 1px solid #A5B5C6;
+	}
+
+ul#mainnav li a {
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding: 6px 6%;
+	background-color: #5C6F90;
+	font: bold 0.8em /1.5 arial, sans-serif;		/* If you get an unwanted gap after your a block (IE-Win) try increasing the line height		*/
+	color: #fff;
+	text-decoration: none;
+	width: 88%;				/* 	Causes Problems in IE5-Mac and Netscape/Mozzilla - see next fix		*/
+	}
+
+ul#mainnav li a:hover {
+	background-color: #43616B;
+	color: #eee;
+	}
+	
+ul#mainnav ul.subnav {
+	margin: 0px;
+	list-style: none;
+	padding: 0px;
+	border: 0px solid pink;
+	}
+
+ul#mainnav ul.subnav li {
+	border-top: 0 none;
+	border: 0px solid green;
+	padding-left: 1.5em;
+	}
+
+ul#mainnav ul.subnav li a {
+	padding: 1%;
+	margin: 0px;
+	font: bold 0.7em /1.5 verdana, sans-serif;
+	color: #5C6F90;
+	background-color: transparent;
+	border: 0px solid yellow;
+	}
+
+ul#mainnav ul.subnav li a:hover {
+	color: #43616B;
+	background-color: transparent;
+	text-decoration: underline;
+	}
+	
+div#topcontent ul {
+	position: absolute;
+	right: 0px;
+	list-style: none;
+	margin: 0px 0px 40px 0px;
+	}
+div#topcontent ul li {
+	display: inline;
+	padding: 0 0.5em;
+	border-left: 1px solid #34339B;	
+	}
+div#topcontent ul li.first {
+	border-left: 0px none;
+	}
+div#topcontent ul li a {
+	font: 0.7em /1 verdana, sans-serif;
+	}
+
+div#topcontent form {
+  position: absolute;
+	right: 0;
+	width: 100%;
+	text-align: right;
+	top: 55px;
+	margin: 0px;
+	}
+/* ---------------------------------------------------------------------*/
+  
